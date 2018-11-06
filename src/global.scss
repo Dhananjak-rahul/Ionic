@@ -10,3 +10,55 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+ion-app{
+    ion-split-pane{
+        ion-menu{
+            ion-header{
+                background-color:#0064c8;
+                ion-toolbar{
+                    background-color:#0064c8;
+
+                }
+                ion-content{
+                    background-color:#666;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+
+.user_img_{   
+    padding:2px;   
+    }
+.user_header{
+    background-image: url("assets/imgs/back.jpg");
+    width:100%;
+    height:120px;}
+.user_img img{   
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:0 auto;
+    display:block;
+    border:1px solid #f0f0f0;
+
+}
+.mr-inv{margin-top:-70px;}
+.blank{padding-top:5px;
+padding-bottom:5px;
+}
+
+.item.active, .item.activated, .item-complex.active .item-content, 
+.item-complex.activated .item-content, .item .item-content.active,
+.item .item-content.activated {
+    background: #0064c8 !important;
+    color:white;
+    font-weight:550;
+}
+ion-header{
+    height:50px;
+}

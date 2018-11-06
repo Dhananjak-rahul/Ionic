@@ -8,14 +8,24 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProfileComponent } from './profile/profile.component';
+import { HelpComponent } from './help/help.component';
+import { ComponentsModule } from './components/components.module';
+import { IonicStorageModule } from '@ionic/storage';
+
+
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ProfileComponent, HelpComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule,
+
+    IonicStorageModule.forRoot()
   ],
   providers: [
     StatusBar,
